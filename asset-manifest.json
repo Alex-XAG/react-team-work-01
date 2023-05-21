@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/react-team-work-01/static/css/main.17654e45.css",
+    "main.js": "/react-team-work-01/static/js/main.42d77006.js",
+    "index.html": "/react-team-work-01/index.html",
+    "main.17654e45.css.map": "/react-team-work-01/static/css/main.17654e45.css.map",
+    "main.42d77006.js.map": "/react-team-work-01/static/js/main.42d77006.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.17654e45.css",
+    "static/js/main.42d77006.js"
+  ]
+}
