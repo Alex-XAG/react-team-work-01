@@ -1,5 +1,3 @@
-import React, { Component } from 'react';
-
 import { FiSearch } from 'react-icons/fi';
 import {
   FormBtn,
