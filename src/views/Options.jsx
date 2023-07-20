@@ -2,6 +2,7 @@ import React from 'react';
 import { Toaster } from 'react-hot-toast';
 import { Section, Hero, Form } from '../components';
 
+
 export const Options = () => {
   return (
     <Section>
