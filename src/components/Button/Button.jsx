@@ -16,7 +16,7 @@ export const Button = ({
     [styles.thumbsDown]: role === "thumbsDown",
   };
 
-  const [updateComment, { isLoading }] = useUpdateCommentMutation();
+  const [updateComment] = useUpdateCommentMutation();
 
   const onBtnHandleClick = () => {
     const updatedComment = handleClick();

@@ -3,6 +3,7 @@ import { Toaster } from 'react-hot-toast';
 import { Section, Hero, Form } from '../components';
 
 
+
 export const Options = () => {
   return (
     <Section>
@@ -14,6 +15,7 @@ export const Options = () => {
       <Form />
 
       <Toaster position='top-center' reverseOrder={false} />
+
     </Section>
   );
 };

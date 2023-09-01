@@ -3,18 +3,17 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 const API_ENDPOINT = "/comments";
 const BASE_URL = "https://64674adeba7110b663b466b2.mockapi.io/";
 
-export const commentApi = createApi({
+export const commentApi = createApi({  
   reducerPath: "comments",
   baseQuery: fetchBaseQuery({
     baseUrl: BASE_URL,
-  }),
+  }),  
   tagTypes: ["Comments"],
   endpoints: (builder) => ({
-    getAllComments: builder.query({
-      // note: an optional `queryFn` may be used in place of `query`
+    getAllComments: builder.query({      
       query: () => API_ENDPOINT,
       providesTags: ["Comments"],
-    }),
+    }),    
     addComment: builder.mutation({
       query: (comment) => ({
         url: API_ENDPOINT,
@@ -36,14 +35,21 @@ export const commentApi = createApi({
         method: "PUT",
         body: updatedComment,
       }),
-      invalidatesTags: ["Comments"],
-    }),
+      invalidatesTags: ["Comments"],      
+    }),    
   }),
 });
 
-export const {
+export const {  
   useGetAllCommentsQuery,
   useAddCommentMutation,
   useDeleteCommentMutation,
-  useUpdateCommentMutation,
+  useUpdateCommentMutation,  
 } = commentApi;
+
+// export const {
+//   selectAll: selectAllComments,
+//   selectById: selectCommentById,
+//   selectIds: selectCommentIds,
+// } = commentAdapter.getSelectors((state) => state.comments);
+
